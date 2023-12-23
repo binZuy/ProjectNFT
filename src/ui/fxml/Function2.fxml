@@ -103,7 +103,7 @@
                         <Insets left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
                   </Label>
-                  <RadioButton mnemonicParsing="false" selected="true" text="Day">
+                  <RadioButton fx:id="radiobtnDay" mnemonicParsing="false" selected="true" text="Day">
                      <HBox.margin>
                         <Insets left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
@@ -117,7 +117,7 @@
                         <ToggleGroup fx:id="choiceSearch" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" text="Week" toggleGroup="$choiceSearch">
+                  <RadioButton fx:id="radiobtnWeek" mnemonicParsing="false" text="Week" toggleGroup="$choiceSearch">
                      <HBox.margin>
                         <Insets left="10.0" right="10.0" top="10.0" />
                      </HBox.margin>
@@ -128,7 +128,7 @@
                         <Insets />
                      </opaqueInsets>
                   </RadioButton>
-                  <RadioButton mnemonicParsing="false" text="Month" toggleGroup="$choiceSearch">
+                  <RadioButton fx:id="radiobtnMonth" mnemonicParsing="false" text="Month" toggleGroup="$choiceSearch">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -141,11 +141,14 @@
                   </RadioButton>
                </children>
             </HBox>
-            <ListView prefHeight="384.0" prefWidth="745.0" style="-fx-background-color: #EEEEEE;" GridPane.rowIndex="1">
-               <padding>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </padding>
-            </ListView>
+            <TableView fx:id="tblViewResult" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+              <columns>
+                  <TableColumn fx:id="colTitle" prefWidth="205.0" text="Title" />
+                  <TableColumn fx:id="colDate" minWidth="0.0" prefWidth="131.0" text="Date" />
+                  <TableColumn fx:id="colHashtagKeyword" minWidth="0.0" prefWidth="169.0" text="Hashtag/Keyword" />
+                  <TableColumn fx:id="colContent" minWidth="0.0" prefWidth="253.0" text="Twitter content/Blog content" />
+              </columns>
+            </TableView>
          </children>
       </GridPane>
    </children>

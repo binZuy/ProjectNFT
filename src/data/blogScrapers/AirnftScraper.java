@@ -47,7 +47,7 @@ public class AirnftScraper implements BlogScraper {
                 Set<String> keywords = extractKeywords(urlDocument, "p:not(.blog-detail-date)");
 
                 // Create an ExtractedData object and add it to the list
-                BlogDataModel extractedData = new BlogDataModel(absoluteUrl, title, content, time, keywords);
+                BlogDataModel extractedData = new BlogDataModel(absoluteUrl, title, time, content, keywords);
                 extractedDataList.add(extractedData);
             }
 

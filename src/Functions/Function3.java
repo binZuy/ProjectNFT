@@ -27,7 +27,14 @@ public class Function3 {
                 .toArray();
         double correlationOpenseaPriceVolume = calculatePearsonCorrelation(rariblePrices, raribleVolumes);
 
-        System.out.println("Correlation between Opensea Price and Volume: " + correlationOpenseaPriceVolume);
+        System.out.println("Correlation between Rarible Price and Volume: " + correlationOpenseaPriceVolume);
+        if (correlationOpenseaPriceVolume >= 0.04) {
+        	System.out.println("Có thể có xu hướng tăng giữa Floor Price và Total Item Supply. Từ đó, ta khẳng định rằng sàn Rarible này có thể đang thực hiện các chiến lược để duy trì tính khan hiếm, giữ giá trị và thu hút sự chú ý tích cực từ cộng đồng, tạo ra một môi trường thị trường NFT động và linh hoạt.");
+        } else if (correlationOpenseaPriceVolume <= -0.04) {
+        	System.out.println("Có thể có xu hướng giảm giữa Floor Price và Total Item Supply. Từ đó, ta khẳng định rằng sàn Rarible này có thể đối mặt với thách thức về áp lực giảm giá và cần phải xem xét chiến lược quản lý cung cấp để duy trì sự cân bằng giữa tính khan hiếm và giá trị.");
+        } else {
+        	System.out.println("Chưa thể xác định rõ ràng xu hướng giữa Floor Price và Total Item Supply. Có thẻ khẳng định rằng sàn có thể đối mặt với thách thức trong việc hiểu và dự đoán biến động của giá thấp nhất dựa trên Total Item Supply.");
+        }
     }
 
     // Các phương thức đọc dữ liệu từ file JSON

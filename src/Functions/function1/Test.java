@@ -4,6 +4,8 @@ package Functions.function1;
 
 import java.io.IOException;
 
+import com.google.gson.JsonArray;
+
 
 
 public class Test {
@@ -13,7 +15,17 @@ public class Test {
     	String twitterFile = "src/data/outputData/TwitterData/twitter.json";
     	String blogFile = "src/data/outputData/blogData/nftically.json";
     	String blog2File = "src/data/outputData/blogData/nonFungible.json";
+    	String blog3File = "src/data/outputData/blogData/nftnewstoday.json";
+    	String blog4File = "src/data/outputData/blogData/airnft.json";
+    	
     	String twitterJsonString = null;
+    	String blogJsonString = null;
+    	String blogHashtagJsonString = null;
+    	String blog2JsonString = null;
+    	String blog3JsonString = null;
+
+    	
+    	
 		try {
 			twitterJsonString = JsonProcessor.readJsonFile(twitterFile);
 			
@@ -21,38 +33,57 @@ public class Test {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-    	String blogJsonString = null;
+    	
 		try {
 			blogJsonString = JsonProcessor.readJsonFile(blogFile);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		String blog2JsonString = null;
+		
 		try {
-			blog2JsonString = JsonProcessor.readJsonFile(blog2File);
+			blog2JsonString = JsonProcessor.readJsonFile(blog3File);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			blog3JsonString = JsonProcessor.readJsonFile(blog4File);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		try {
+			blogHashtagJsonString = JsonProcessor.readJsonFile(blog2File);
 			
 		}catch (IOException e) {
 			e.printStackTrace();
 		}
-        HashtagJsonProcessor twitterProcessor = new HashtagJsonProcessor();
+		JsonArray hashtagArray = new JsonArray();
+        HashtagJsonProcessor twitterProcessor = new HashtagJsonProcessor(hashtagArray);
         KeywordJsonProcessor blogProcessor = new KeywordJsonProcessor();
 
         // Filter Twitter posts by hashtag
         twitterProcessor.displayUniqueHashtags(twitterJsonString);
+        blogProcessor.displayUniqueKeywords(blogHashtagJsonString);
+
         twitterProcessor.filterByHashtag(twitterJsonString, "#NFT");
+        blogProcessor.filterByKeyword(blogHashtagJsonString, "#Virtual Races");
 
         // Filter Blog posts by keyword
         blogProcessor.displayUniqueKeywords(blogJsonString);
-        blogProcessor.filterByKeyword(blogJsonString, "");
-        
+
         //Filter Blog posts by hashtag
-        twitterProcessor.displayUniqueHashtags(blog2JsonString);
-        twitterProcessor.filterByHashtag(blog2JsonString, "#NFT");
-        // Display the hottest hashtag in the last day
-//        postProcessor.displayHottestHashtag(twitterJsonString, "day");
-//
-//        // Display the hottest keyword in the last week
-//        postProcessor.displayHottestKeyword(blogJsonString, "week");
+
+        blogProcessor.displayUniqueKeywords(blog2JsonString);
+        blogProcessor.displayUniqueKeywords(blog3JsonString);
+        
+        
+        blogProcessor.filterByKeyword(blogJsonString, "");
+        blogProcessor.filterByKeyword(blog2JsonString, "");
+        blogProcessor.filterByKeyword(blog3JsonString, "");
+
+
     }
 }

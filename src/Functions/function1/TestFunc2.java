@@ -2,6 +2,7 @@ package Functions.function1;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -17,7 +18,8 @@ import java.util.Locale;
 public class TestFunc2 {
 
 	public static void main(String[] args) {
-	    HashtagJsonProcessor hashtagJsonProcessor = new HashtagJsonProcessor();
+		JsonArray hashtagArray = new JsonArray();
+	    HashtagJsonProcessor hashtagJsonProcessor = new HashtagJsonProcessor(hashtagArray);
 	    String modifiedJsonString = hashtagJsonProcessor.processJsonFile("src/data/outputData/blogData/nonFungible.json");
 	    KeywordJsonProcessor keywordJsonProcessor = new KeywordJsonProcessor();
 	    String modifiedJsonString2 = keywordJsonProcessor.processJsonFile("src/data/outputData/blogData/nftically.json");

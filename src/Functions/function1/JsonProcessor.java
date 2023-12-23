@@ -146,6 +146,7 @@ abstract class JsonProcessor {
                 if (containsKeyword(keywordsArray, targetKeyword)) {
                     displayUniqueContent(jsonObject);
                     found = true;
+                    break;
                 }
             }
         }
