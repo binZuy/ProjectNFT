@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="180.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controller.ClientMenuController">
+   <children>
+      <AnchorPane prefHeight="720.0" prefWidth="180.0">
+         <children>
+            <VBox prefHeight="700.0" prefWidth="180.0" style="-fx-background-color: #3f2863;">
+               <children>
+                  <Pane prefHeight="220.0" prefWidth="230.0">
+                     <children>
+                        <ImageView fitHeight="220.0" fitWidth="180.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@nftimage.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="50.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <Button fx:id="btnMainClient" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #7156DD;" text="Main Client" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnUpdate" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #7156DD;" text="Get The News" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnFunction1" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #7156DD;" text="Searching Tool" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnFunction2" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #7156DD;" text="Hottest Keyword" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="btnFunction3" alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #7156DD;" text="Prediction" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

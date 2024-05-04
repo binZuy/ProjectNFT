@@ -1,4 +1,4 @@
-package data.apiFetcher;
+package Data.ApiFetcher;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -1,4 +1,4 @@
-package data.twitterScraper;
+package Data.twitterScraper;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -21,7 +21,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import data.model.TwitterModel;
+import Data.Model.TwitterModel;
 import util.path.JsonURL;
 
 public class TwitterScraper {

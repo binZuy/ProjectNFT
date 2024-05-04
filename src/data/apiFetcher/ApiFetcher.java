@@ -1,4 +1,4 @@
-package data.apiFetcher;
+package Data.ApiFetcher;
 
 import java.io.IOException;
 

@@ -1,6 +1,6 @@
-package data.blogScrapers;
+package Data.BlogScrapers;
 
-import data.apiFetcher.Fetcher;
+import Data.ApiFetcher.Fetcher;
 
 public class Scraper {
 

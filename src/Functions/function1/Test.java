@@ -10,7 +10,7 @@ import com.google.gson.JsonArray;
 
 public class Test {
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         // Example usage
     	String twitterFile = "src/data/outputData/TwitterData/twitter.json";
     	String blogFile = "src/data/outputData/blogData/nftically.json";
@@ -60,15 +60,15 @@ public class Test {
 		}catch (IOException e) {
 			e.printStackTrace();
 		}
-		JsonArray hashtagArray = new JsonArray();
-        HashtagJsonProcessor twitterProcessor = new HashtagJsonProcessor(hashtagArray);
+
+        HashtagJsonProcessor twitterProcessor = new HashtagJsonProcessor();
         KeywordJsonProcessor blogProcessor = new KeywordJsonProcessor();
 
         // Filter Twitter posts by hashtag
         twitterProcessor.displayUniqueHashtags(twitterJsonString);
         blogProcessor.displayUniqueKeywords(blogHashtagJsonString);
 
-        twitterProcessor.filterByHashtag(twitterJsonString, "#NFT");
+       // twitterProcessor.filterByHashtag(twitterJsonString, "#NFT");
         blogProcessor.filterByKeyword(blogHashtagJsonString, "#Virtual Races");
 
         // Filter Blog posts by keyword
@@ -84,6 +84,5 @@ public class Test {
         blogProcessor.filterByKeyword(blog2JsonString, "");
         blogProcessor.filterByKeyword(blog3JsonString, "");
 
-
-    }
+    }*/
 }

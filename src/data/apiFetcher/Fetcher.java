@@ -1,4 +1,4 @@
-package data.apiFetcher;
+package Data.ApiFetcher;
 
 public class Fetcher {
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id = "client_parent" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<!-- TODO Add Nodes -->
+	<left> 
+		<fx:include source="ClientMenu.fxml" />
+	</left>
+	
+	<center> 
+		<fx:include source="Main.fxml" />
+	</center>
+</BorderPane>

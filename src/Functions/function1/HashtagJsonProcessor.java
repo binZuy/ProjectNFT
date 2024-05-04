@@ -10,7 +10,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeSet;
@@ -18,28 +17,14 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 class HashtagJsonProcessor extends JsonProcessor {
-	private JsonArray hashtagArray;
-	
-	public HashtagJsonProcessor(JsonArray initialHashtagArray) {
-        this.hashtagArray = initialHashtagArray;
-    }
-	
     @Override
     boolean containsTag(JsonArray hashtagArray, String targetHashtag) {
         // Implementation specific to Twitter posts
-    	if (hashtagArray == null) {
-    		return false;
-    	}
-    	Iterator<JsonElement> iterator = hashtagArray.iterator();
-        while (iterator.hasNext()) {
-            // Your existing code to process the array elements
-        	return true;
-        }
-       /* for (JsonElement hashtagElement : hashtagArray) {
+        for (JsonElement hashtagElement : hashtagArray) {
             if (hashtagElement.getAsString().equalsIgnoreCase(targetHashtag)) {
                 return true;
             }
-        }*/
+        }
         return false;
     }
 

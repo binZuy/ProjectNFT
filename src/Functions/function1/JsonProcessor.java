@@ -26,7 +26,7 @@ import java.util.Map;
 
 import java.util.Locale;
 
-abstract class JsonProcessor {
+public abstract class JsonProcessor {
     abstract boolean containsTag(JsonArray hashtagArray, String targetHashtag);
     abstract boolean containsKeyword(JsonArray keywordsArray, String targetKeyword);
     abstract void displayUniqueContent(JsonObject jsonObject);
@@ -83,7 +83,7 @@ abstract class JsonProcessor {
     }
 
 
-    public void displayJsonArray(String jsonArrayString) {
+    /*public void displayJsonArray(String jsonArrayString) {
         Gson gson = new Gson();
         JsonArray jsonArray = gson.fromJson(jsonArrayString, JsonArray.class);
 
@@ -146,7 +146,6 @@ abstract class JsonProcessor {
                 if (containsKeyword(keywordsArray, targetKeyword)) {
                     displayUniqueContent(jsonObject);
                     found = true;
-                    break;
                 }
             }
         }
@@ -289,8 +288,6 @@ abstract class JsonProcessor {
             e.printStackTrace(); // Handle the IOException appropriately
         }
 
-        return postsOfWeek;
-    }
+        return postsOfWeek;        
+    }*/
 }
-
-

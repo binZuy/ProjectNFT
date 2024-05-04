@@ -1,9 +1,9 @@
-package data.blogScrapers;
+package Data.BlogScrapers;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import data.model.BlogDataModel;
+import Data.Model.BlogDataModel;
 import util.path.JsonURL;
 
 import org.jsoup.Jsoup;

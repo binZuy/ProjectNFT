@@ -1,10 +1,10 @@
-package data.blogScrapers;
-
-import data.model.BlogDataModel;
+package Data.BlogScrapers;
 
 import java.io.IOException;
 import java.util.List;
 import java.util.Set;
+
+import Data.Model.BlogDataModel;
 
 public interface BlogScraper {
 

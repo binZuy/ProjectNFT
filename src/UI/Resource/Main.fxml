@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controller.MainController">
+   <children>
+      <ImageView fx:id="soictImage" fitHeight="156.0" fitWidth="509.0" layoutX="202.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@hustimage.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="23.0" layoutY="179.0" prefHeight="45.0" prefWidth="107.0" text="HELLO">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutX="49.0" layoutY="67.0" prefHeight="88.0" prefWidth="502.0" />
+      <Label layoutX="314.0" layoutY="265.0" text="1. Nguyen Trung Duc - 20210201" AnchorPane.leftAnchor="314.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="293.0" text="2. Nguyen Minh Duy - 20210270" AnchorPane.leftAnchor="316.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="320.0" text="3. Do Gia Huy - 20215060" AnchorPane.leftAnchor="315.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="309.0" layoutY="350.0" text="4. Mai Nhat Minh - 20215090" AnchorPane.bottomAnchor="330.0" AnchorPane.leftAnchor="315.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="380.0" text="5. Vo Son Long - 20215082" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="316.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="406.0" text="6. Nguyen Hoang Quan - 20215127" AnchorPane.bottomAnchor="274.0" AnchorPane.leftAnchor="315.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="236.0" text="My team includes 6 people:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text layoutX="130.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This is an application designed for the purpose of performing NFTs news collecting.&#10;It was created as part of  the Object Oriented Programming course-IT3103 to study and get used to the priciples of object-oriented design and programming paradigms.&#10;" textAlignment="CENTER" wrappingWidth="627.40185546875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <VBox alignment="CENTER" layoutX="-5.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="154.0" prefWidth="840.0" style="-fx-background-color: #7156DD;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="BOTTOM_LEFT" text="PROJECT NFTs COLLECTING" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
